@@ -1,0 +1,3 @@
+Sitemap: http://www.cdsr.net/sitemap.xml
+
+User-agent: *
