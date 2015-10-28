@@ -1,5 +1,5 @@
 <?php
-$my_email = "CDSR Registration registration@cdsr.net";
+$my_email = "registration@cdsr.net";
 $errors = array();
 
 // Remove $_COOKIE elements from $_REQUEST.
@@ -14,23 +14,23 @@ if(!defined("PHP_EOL")){define("PHP_EOL", strtoupper(substr(PHP_OS,0,3) == "WIN"
 
 // Build message.
 function build_message($request_input){
-	if(!isset($message_output)){
-		$message_output ="";
-	}
-	if(!is_array($request_input)){
-		$message_output = $request_input;
-	}else{
-		foreach($request_input as $key => $value){
-			if(!empty($value)){
-				if(!is_numeric($key)){
-					$message_output .= str_replace("_"," ",ucfirst($key)).": ".build_message($value).PHP_EOL.PHP_EOL;
-				}else{
-					$message_output .= build_message($value).", ";
-				}
-			}
-		}
-	}
-	return rtrim($message_output,", ");
+  if(!isset($message_output)){
+    $message_output ="";
+  }
+  if(!is_array($request_input)){
+    $message_output = $request_input;
+  }else{
+    foreach($request_input as $key => $value){
+      if(!empty($value)){
+        if(!is_numeric($key)){
+          $message_output .= str_replace("_"," ",ucfirst($key)).": ".build_message($value).PHP_EOL.PHP_EOL;
+        }else{
+          $message_output .= build_message($value).", ";
+        }
+      }
+    }
+  }
+  return rtrim($message_output,", ");
 }
 
 // Defining the Variables
@@ -45,7 +45,7 @@ Thank you for registering for CDSR 2016. If you have requested any official lett
 
 If you are an author, please make sure to send us your camera ready version and a signed copyright form via email to info@cdsr.net. You can find the copyright form here: www.cdsr.net/papers. Please note that failing to do so may result in an unsuccessful process of your registration.
 
-You can find your registration details below. If there are any errors in the information you have provided, please write an email to us at registration@ffhmt.com mentioning the correct information. Please note that you SHOULD NOT refill the form.
+You can find your registration details below. If there are any errors in the information you have provided, please write an email to us at registration@cdsr.net mentioning the correct information. Please note that you SHOULD NOT refill the form.
 
 ---
 
@@ -67,7 +67,7 @@ $your_email = $_REQUEST['Email'];
 
 $your_subject = "Your Registration Details for CDSR'16";
 
-$your_headers = "From: " . $my_email;
+$your_headers = "From: CDSR'16 <" . $my_email . ">";
 
 if ((($_FILES["file"]["type"] == "image/gif")
 
@@ -92,14 +92,14 @@ if ((($_FILES["file"]["type"] == "image/gif")
     {
       move_uploaded_file($_FILES["file"]["tmp_name"],"receipts/" . $_FILES["file"]["name"]);
       rename("receipts/".$_FILES['file']['name'],"receipts/".$date.'_'.$_FILES['file']['name']);
-	$filename = $date.'_'.$_FILES['file']['name'];
+  $filename = $date.'_'.$_FILES['file']['name'];
     }
   }
 else
   {
   die("The file you have selected for upload is invalid. <br />
-	Please make sure the file you are trying to upload is an image (.jpg, .jpeg, .png, .gif, .tif) <br />
-	No other file types are allowed.");
+  Please make sure the file you are trying to upload is an image (.jpg, .jpeg, .png, .gif, .tif) <br />
+  No other file types are allowed.");
   }
 
 mail($my_email,$subject,$message,$headers);
@@ -154,7 +154,7 @@ mail($your_email,$your_subject,$message,$your_headers);
     <li><a href="../sponsor">Sponsors</a></li>
     <li><a href="../venue">Venue</a></li>
     <li><a href="../accommodation">Accommodation</a></li>
-    <li><a href="../symposium">Symposium</a></li>
+    <li><a href="../symposium">Symposiums</a></li>
     <li><a href="#contact">Contact Us</a></li>
   </ul>
 </nav>
@@ -162,30 +162,30 @@ mail($your_email,$your_subject,$message,$your_headers);
 <div id="content">
   <div class="desktop">
   <div class="cbp-af-header">
-	<div class="cbp-af-inner">
-		<a href="/"><img src="../img/logo.png" class="flex-logo"></a>
-			<nav>
-				<a href="/">Home</a><p class="dot">&middot;</p><a href="../papers">Paper Submission</a><p class="dot">&middot;</p><a href="../program">Program</a><p class="dot">&middot;</p><a href="../dates">Important Dates</a><p class="dot">&middot;</p><a href="../registration">Registration</a><p class="dot">&middot;</p><a href="../committee">Committee</a><p class="dot">&middot;</p><a href="../keynote">Keynotes</a><p class="dot">&middot;</p><a href="../sponsor">Sponsors</a><p class="dot">&middot;</p><a href="../venue">Venue</a><p class="dot">&middot;</p><a href="../accommodation">Accommodation</a><p class="dot">&middot;</p><a href="../symposium">Symposium</a><p class="dot">&middot;</p><a href="#contact">Contact Us</a>
-		</nav>
-	</div>
+  <div class="cbp-af-inner">
+    <a href="/"><img src="../img/logo.png" class="flex-logo"></a>
+      <nav>
+        <a href="/">Home</a><p class="dot">&middot;</p><a href="../papers">Paper Submission</a><p class="dot">&middot;</p><a href="../program">Program</a><p class="dot">&middot;</p><a href="../dates">Important Dates</a><p class="dot">&middot;</p><a href="../registration">Registration</a><p class="dot">&middot;</p><a href="../committee">Committee</a><p class="dot">&middot;</p><a href="../keynote">Keynotes</a><p class="dot">&middot;</p><a href="../sponsor">Sponsors</a><p class="dot">&middot;</p><a href="../venue">Venue</a><p class="dot">&middot;</p><a href="../accommodation">Accommodation</a><p class="dot">&middot;</p><a href="../symposium">Symposiums</a><p class="dot">&middot;</p><a href="#contact">Contact Us</a>
+    </nav>
+  </div>
 </div>
 </div>
 
   <header>
     <div class="mobile">
       <div class="cbp-af-header">
-	<div class="cbp-af-inner">
-		<div class="unit unit-s-3-4 unit-m-1-3 unit-l-1-3">
-      		<a href="/"><img src="../img/logo.png" class="flex-logo"></a>
-   	 	</div>
-    	<div class="unit unit-s-1-3 unit-m-2-3 unit-m-2-3-1 unit-l-2-3">
-      		<div class="menu-trigger"></div>
-  		</div>
-	</div>
+  <div class="cbp-af-inner">
+    <div class="unit unit-s-3-4 unit-m-1-3 unit-l-1-3">
+          <a href="/"><img src="../img/logo.png" class="flex-logo"></a>
+      </div>
+      <div class="unit unit-s-1-3 unit-m-2-3 unit-m-2-3-1 unit-l-2-3">
+          <div class="menu-trigger"></div>
+      </div>
+  </div>
 </div>
         <div class="bg">
           <h1>3<sup>rd</sup> International Conference on Control <br>Dynamic Systems, and Robotics (CDSR'16)</h1>
-          <p class="subhead">May 2016 | Ottawa, ON</p>
+          <p class="subhead">May 9 - 10, 2016 | Ottawa, ON</p>
 
           <a href="../papers" class="bg-link">Paper Submission</a> <p class="dot">&middot;</p> <a href="../dates" class="bg-link">Important Dates</a> <p class="dot">&middot;</p> <a href="../registration" class="bg-link">Registration</a>
 
@@ -211,7 +211,7 @@ mail($your_email,$your_subject,$message,$your_headers);
 
         <div class="bg">
           <h1>3<sup>rd</sup> International Conference on Control <br>Dynamic Systems, and Robotics (CDSR'16)</h1>
-          <p class="subhead">May 2016 | Ottawa, ON</p>
+          <p class="subhead">May 9 - 10, 2016 | Ottawa, ON</p>
 
           <a href="../papers" class="bg-link">Paper Submission</a> <p class="dot">&middot;</p> <a href="../dates" class="bg-link">Important Dates</a> <p class="dot">&middot;</p> <a href="../registration" class="bg-link">Registration</a>
 
@@ -239,7 +239,20 @@ mail($your_email,$your_subject,$message,$your_headers);
     <div>
       <h2 class="title">1</h2>
       <p class="bold">CDSR 2016:</p>
-      <p class="body">CDSR 2016 will  be held in Ottawa, Canada on May 2016.</p>
+      <p class="body">CDSR 2016 will  be held in Ottawa, Canada on May 9 - 10, 2016.</p>
+
+  <p class="bold">CDSR'16 Symposiums:</p>
+      <p class="body">The Organizing Committee has selected the following fields for specialized and focused symposiums under the umbrella of CDSR'16:</p>
+
+      <ul>
+  <li><a href="../biomr" class="body-link">Biomechatronics and Biorobotics</a></li>
+      <li>Intelligent Manufacturing & Automation</li>
+      <li>Sensing, Instrumentation, and Measurement</li>
+      <li>Linear, Non-Linear, and Adaptive Control</li>
+      <li>Mechatronics</li>
+      </ul>
+
+      <p class="body">If you are interested of your article to be part of the above-mentioned symposiums, please inform us when submitting your article. Please visit <a href="../symposium" class="body-link">Symposiums</a> for more information.</p>
     </div>          
     <div>
       <h2 class="title">2</h2>
@@ -257,72 +270,72 @@ mail($your_email,$your_subject,$message,$your_headers);
 
     <p class="body">If you do not receive an email, <strong>please check your SPAM folder</strong>.</p>
 
- 	<p class="body">If you have requested any official invitation letters, please allow up to 5 business days to receive your documents.</p> 
+  <p class="body">If you have requested any official invitation letters, please allow up to 5 business days to receive your documents.</p> 
 
-  	<p class="body">If there are any problems in the information you have filled out, please write an email to us at <a href="mailto:registration@cdsr.net" class="body-link">registration@cdsr.net</a> mentioning the mistakes made. Please note that you SHOULD NOT refill the form.</p>
+    <p class="body">If there are any problems in the information you have filled out, please write an email to us at <a href="mailto:registration@cdsr.net" class="body-link">registration@cdsr.net</a> mentioning the mistakes made. Please note that you SHOULD NOT refill the form.</p>
 
-	<p class="body">We are looking forward to seeing you at CDSR'16!</p>
+  <p class="body">We are looking forward to seeing you at CDSR'16!</p>
   </div>
 </div>
 
   <div class="unit unit-s-1 unit-m-1-3-1 unit-l-1-3-1">
   <div class="unit-spacer">
     <section class="main">
-				<div class="custom-calendar-wrap">
-					<div id="custom-inner" class="custom-inner">
-						<div class="custom-header clearfix">
-							<nav>
-								<span id="custom-prev" class="custom-prev"></span>
-								<span id="custom-next" class="custom-next"></span>
-							</nav>
-							<h2 id="custom-month" class="custom-month"></h2>
-							<h3 id="custom-year" class="custom-year"></h3>
-						</div>
-						<div id="calendar" class="fc-calendar-container"></div>
-					</div>
-				</div>
-			</section>
+        <div class="custom-calendar-wrap">
+          <div id="custom-inner" class="custom-inner">
+            <div class="custom-header clearfix">
+              <nav>
+                <span id="custom-prev" class="custom-prev"></span>
+                <span id="custom-next" class="custom-next"></span>
+              </nav>
+              <h2 id="custom-month" class="custom-month"></h2>
+              <h3 id="custom-year" class="custom-year"></h3>
+            </div>
+            <div id="calendar" class="fc-calendar-container"></div>
+          </div>
+        </div>
+      </section>
     <h2>Upcoming Dates</h2>
 
 <div class="grid events">
 <div class="unit unit-s-1 unit-m-1-4 unit-l-1-4">
-	<div class="date">
-		Jan. 1, 2016
-	</div>
+  <div class="date">
+    Jan. 1, 2016
+  </div>
 </div>
 
 <div class="unit unit-s-1 unit-m-3-4 unit-l-3-4">
-	<div class="unit-spacer">
-		Paper Submission Deadline
-	</div>
+  <div class="unit-spacer">
+    Paper Submission Deadline
+  </div>
 </div>
 </div>
 
 <div class="grid events">
 <div class="unit unit-s-1 unit-m-1-4 unit-l-1-4">
-	<div class="date">
-		Feb. 10, 2016
-	</div>
+  <div class="date">
+    Feb. 10, 2016
+  </div>
 </div>
 
 <div class="unit unit-s-1 unit-m-3-4 unit-l-3-4">
-	<div class="unit-spacer">
-		Notification of Authors
-	</div>
+  <div class="unit-spacer">
+    Notification of Authors
+  </div>
 </div>
 </div>
 
 <div class="grid events">
 <div class="unit unit-s-1 unit-m-1-4 unit-l-1-4">
-	<div class="date">
-		Feb. 20, 2016
-	</div>
+  <div class="date">
+    Feb. 20, 2016
+  </div>
 </div>
 
 <div class="unit unit-s-1 unit-m-3-4 unit-l-3-4">
-	<div class="unit-spacer">
-		Camera Ready Submission Deadline
-	</div>
+  <div class="unit-spacer">
+    Camera Ready Submission Deadline
+  </div>
 </div>
 </div>
   </div>
@@ -330,22 +343,22 @@ mail($your_email,$your_subject,$message,$your_headers);
 </div>
 
 <footer id="contact">
-	<div class="grid">
-	<div class="unit unit-s-1 unit-m-1-3 unit-l-1-3">
-	<div class="unit-spacer">
-		<h2>Contact Us</h2>
-		<p class="body">International ASET Inc.<br>
-		Unit No. 417, 1376 Bank St.<br>
-		Ottawa, Ontario, Canada<br>
-		Postal Code: K1H 7Y3<br>
-		+1-613-695-3040<br>
-		<a href="mailto:info@cdsr.net">info@cdsr.net</a></p>
-		</div>
-	</div>
+  <div class="grid">
+  <div class="unit unit-s-1 unit-m-1-3 unit-l-1-3">
+  <div class="unit-spacer">
+    <h2>Contact Us</h2>
+    <p class="body">International ASET Inc.<br>
+    Unit No. 417, 1376 Bank St.<br>
+    Ottawa, Ontario, Canada<br>
+    Postal Code: K1H 7Y3<br>
+    +1-613-695-3040<br>
+    <a href="mailto:info@cdsr.net">info@cdsr.net</a></p>
+    </div>
+  </div>
 
-	<div class="unit unit-s-1 unit-m-2-3 unit-l-2-3 contact">
-	<div class="unit-spacer">
-	<p class="body">For questions or comments regarding CDSR'16, please fill out the form below:</p>
+  <div class="unit unit-s-1 unit-m-2-3 unit-l-2-3 contact">
+  <div class="unit-spacer">
+  <p class="body">For questions or comments regarding CDSR'16, please fill out the form below:</p>
 
     <form action="../contactus.php" method="post" enctype="multipart/form-data" name="ContactForm">
   
@@ -395,14 +408,14 @@ mail($your_email,$your_subject,$message,$your_headers);
         
 </form>
     </div>
-	</div>
-	</div>
+  </div>
+  </div>
 </footer> 
 
 <div class="copyright">
-	<a href="international-aset.com">International ASET Inc.</a> | <a href="http://international-aset.com/phplistpublic/?p=subscribe&id=1">Subscribe</a> | <a href="../terms">Terms of Use</a> | <a href="../sitemap">Sitemap</a>
-	<p class="body">&copy; Copyright International ASET Inc., 2015. All rights reserved.</p>
-	<p class="copyright1">Have any feedback? Please provide them here: <script>var refURL = window.location.protocol + "//" + window.location.host + window.location.pathname; document.write('<a href="http://international-aset.com/feedback/?refURL=' + refURL+'" class="body-link">Feedback</a>');</script></p>
+  <a href="international-aset.com">International ASET Inc.</a> | <a href="http://international-aset.com/phplistpublic/?p=subscribe&id=1">Subscribe</a> | <a href="../terms">Terms of Use</a> | <a href="../sitemap">Sitemap</a>
+  <p class="body">&copy; Copyright International ASET Inc., 2015. All rights reserved.</p>
+  <p class="copyright1">Have any feedback? Please provide them here: <script>var refURL = window.location.protocol + "//" + window.location.host + window.location.pathname; document.write('<a href="http://international-aset.com/feedback/?refURL=' + refURL+'" class="body-link">Feedback</a>');</script></p>
 </div>
 </div>
 
