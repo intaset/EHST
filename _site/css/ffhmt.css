@@ -658,7 +658,7 @@ textarea.textareaHintState, .textareaHintState textarea{
 	}
 }
 
--moz-viewport { width: device-width; scale: 1; }
+@-moz-viewport { width: device-width; scale: 1; }
 @-ms-viewport { width: device-width; scale: 1; }
 @-o-viewport { width: device-width; scale: 1; }
 @-webkit-viewport { width: device-width; scale: 1; }
@@ -1432,6 +1432,7 @@ textarea {
   font-family: 'Lato', sans-serif;
   letter-spacing: 1px;
   text-align: center;
+  font-weight: 400;
 }
 
 .copyright .copyright1 {
@@ -2030,10 +2031,6 @@ footer form {
 	.cbp-af-header nav a {
   font-size: 1em!important;
 }
-}
-
-/* 1920 PX */
-@media only screen and (min-width: 119em) {
 }
 .grid {
   letter-spacing: -0.31em;

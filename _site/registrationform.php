@@ -41,7 +41,7 @@ $message = build_message($_REQUEST);
 
 $message = 'Dear Colleague,
 
-Thank you for registering for CDSR 2016. If you have requested any official letters, please allow up to 5 business days to receive your documents.
+Thank you for registering for CDSR 2017. If you have requested any official letters, please allow up to 5 business days to receive your documents.
 
 If you are an author, please make sure to send us your camera ready version and a signed copyright form via email to info@cdsr.net. You can find the copyright form here: www.cdsr.net/papers. Please note that failing to do so may result in an unsuccessful process of your registration.
 
@@ -65,9 +65,9 @@ $headers = "From: " . $_REQUEST['Email'];
 
 $your_email = $_REQUEST['Email'];
 
-$your_subject = "Your Registration Details for CDSR'16";
+$your_subject = "Your Registration Details for CDSR'17";
 
-$your_headers = "From: CDSR'16 <" . $my_email . ">";
+$your_headers = "From: CDSR'17 <" . $my_email . ">";
 
 if ((($_FILES["file"]["type"] == "image/gif")
 
@@ -77,7 +77,9 @@ if ((($_FILES["file"]["type"] == "image/gif")
 
 || ($_FILES["file"]["type"] == "image/jpg")
 
-|| ($_FILES["file"]["type"] == "image/tif"))
+|| ($_FILES["file"]["type"] == "image/tif")
+
+|| ($_FILES["file"]["type"] == "application/pdf"))
 
 && ($_FILES["file"]["size"] < 20000000))
 
@@ -113,7 +115,7 @@ mail($your_email,$your_subject,$message,$your_headers);
 <meta name="robots" content="noarchive">
 <meta name="description" content="">
 <meta name="keywords" content="">
-<title>CDSR'16 - Registration Form Filled!</title>
+<title>CDSR'17 - Registration Form Filled!</title>
 
 <meta name="handheldfriendly" content="true">
 <meta name="mobileoptimized" content="240">
@@ -142,7 +144,7 @@ mail($your_email,$your_subject,$message,$your_headers);
 
 <body>
 <nav id="slide-menu">
-  <h1>CDSR'16</h1>
+  <h1>CDSR'17</h1>
   <ul>
     <li><a href="/">Home</a></li>
     <li><a href="../papers">Paper Submissions</a></li>
@@ -184,8 +186,8 @@ mail($your_email,$your_subject,$message,$your_headers);
   </div>
 </div>
         <div class="bg">
-          <h1>3<sup>rd</sup> International Conference on Control <br>Dynamic Systems, and Robotics (CDSR'16)</h1>
-          <p class="subhead">May 9 - 10, 2016 | Ottawa, ON</p>
+          <h1>4<sup>th</sup> International Conference on Control<br>Dynamic Systems and Robotics (CDSR'17)</h1>
+          <p class="subhead">August 22 - 23, 2017 | Toronto, Canada</p>
 
           <a href="../papers" class="bg-link">Paper Submission</a> <p class="dot">&middot;</p> <a href="../dates" class="bg-link">Important Dates</a> <p class="dot">&middot;</p> <a href="../registration" class="bg-link">Registration</a>
 
@@ -210,8 +212,8 @@ mail($your_email,$your_subject,$message,$your_headers);
         </div>
 
         <div class="bg">
-          <h1>3<sup>rd</sup> International Conference on Control <br>Dynamic Systems, and Robotics (CDSR'16)</h1>
-          <p class="subhead">May 9 - 10, 2016 | Ottawa, ON</p>
+          <h1>4<sup>th</sup> International Conference on Control<br>Dynamic Systems and Robotics (CDSR'17)</h1>
+          <p class="subhead">August 22 - 23, 2017 | Toronto, Canada</p>
 
           <a href="../papers" class="bg-link">Paper Submission</a> <p class="dot">&middot;</p> <a href="../dates" class="bg-link">Important Dates</a> <p class="dot">&middot;</p> <a href="../registration" class="bg-link">Registration</a>
 
@@ -238,29 +240,21 @@ mail($your_email,$your_subject,$message,$your_headers);
       <div id="main-slider" class="liquid-slider">
     <div>
       <h2 class="title">1</h2>
-      <p class="bold">CDSR 2016:</p>
-      <p class="body">CDSR 2016 will  be held in Ottawa, Canada on May 9 - 10, 2016.</p>
-
-  <p class="bold">CDSR'16 Symposiums:</p>
-      <p class="body">The Organizing Committee has selected the following fields for specialized and focused symposiums under the umbrella of CDSR'16:</p>
-
-      <ul>
-  <li><a href="../biomr" class="body-link">Biomechatronics and Biorobotics</a></li>
-      <li>Intelligent Manufacturing & Automation</li>
-      <li>Sensing, Instrumentation, and Measurement</li>
-      <li>Linear, Non-Linear, and Adaptive Control</li>
-      <li>Mechatronics</li>
-      </ul>
-
-      <p class="body">If you are interested of your article to be part of the above-mentioned symposiums, please inform us when submitting your article. Please visit <a href="../symposium" class="body-link">Symposiums</a> for more information.</p>
+      <p class="bold">CDSR 2017:</p>
+      <p class="body">CDSR 2017 will  be held in Toronto, Canada on August 22 - 23, 2017.</p>
     </div>          
     <div>
       <h2 class="title">2</h2>
       <p class="bold">Best Paper Award:</p>
       <p class="body">Two best paper awards will be conferred to author(s) of the papers that receive the highest rank during the peer-review and by the respected session chairs. Please visit <a href="../papers" class="body-link">Paper Submission</a> for more information.</p>
     </div>
-
+    <div>
+      <h2 class="title">3</h2>
+      <p class="bold">Propose Exhibits, Workshops & More</p>
+      <p class="body">CDSR attracts a wide range of researchers in the field of control, dynamic systems, robotics. As a prominent company in the field of control, dynamic systems, robotics, we would like to offer you an exhibit at CDSR. Please visit <a href="../events" class="body-link">Events</a> for more information.</p>
+    </div>
   </div>
+
     </div>
   </div>
 
@@ -274,7 +268,7 @@ mail($your_email,$your_subject,$message,$your_headers);
 
     <p class="body">If there are any problems in the information you have filled out, please write an email to us at <a href="mailto:registration@cdsr.net" class="body-link">registration@cdsr.net</a> mentioning the mistakes made. Please note that you SHOULD NOT refill the form.</p>
 
-  <p class="body">We are looking forward to seeing you at CDSR'16!</p>
+  <p class="body">We are looking forward to seeing you at CDSR'17!</p>
   </div>
 </div>
 
@@ -300,7 +294,7 @@ mail($your_email,$your_subject,$message,$your_headers);
 <div class="grid events">
 <div class="unit unit-s-1 unit-m-1-4 unit-l-1-4">
   <div class="date">
-    Jan. 1, 2016
+    Mar. 1, 2017
   </div>
 </div>
 
@@ -314,7 +308,7 @@ mail($your_email,$your_subject,$message,$your_headers);
 <div class="grid events">
 <div class="unit unit-s-1 unit-m-1-4 unit-l-1-4">
   <div class="date">
-    Feb. 10, 2016
+    Apr. 15, 2017
   </div>
 </div>
 
@@ -328,16 +322,17 @@ mail($your_email,$your_subject,$message,$your_headers);
 <div class="grid events">
 <div class="unit unit-s-1 unit-m-1-4 unit-l-1-4">
   <div class="date">
-    Feb. 20, 2016
+    May 01, 2017
   </div>
 </div>
 
 <div class="unit unit-s-1 unit-m-3-4 unit-l-3-4">
   <div class="unit-spacer">
-    Camera Ready Submission Deadline
+    Final Version of Extended Abstract or Paper Submission Deadline
   </div>
 </div>
 </div>
+
   </div>
   </div>
 </div>
@@ -358,7 +353,7 @@ mail($your_email,$your_subject,$message,$your_headers);
 
   <div class="unit unit-s-1 unit-m-2-3 unit-l-2-3 contact">
   <div class="unit-spacer">
-  <p class="body">For questions or comments regarding CDSR'16, please fill out the form below:</p>
+  <p class="body">For questions or comments regarding CDSR'17, please fill out the form below:</p>
 
     <form action="../contactus.php" method="post" enctype="multipart/form-data" name="ContactForm">
   
@@ -413,8 +408,8 @@ mail($your_email,$your_subject,$message,$your_headers);
 </footer> 
 
 <div class="copyright">
-  <a href="international-aset.com">International ASET Inc.</a> | <a href="http://international-aset.com/phplistpublic/?p=subscribe&id=1">Subscribe</a> | <a href="../terms">Terms of Use</a> | <a href="../sitemap">Sitemap</a>
-  <p class="body">&copy; Copyright International ASET Inc., 2015. All rights reserved.</p>
+  <a href="http://international-aset.com">International ASET Inc.</a> | <a href="http://international-aset.com/phplistpublic/?p=subscribe&id=1">Subscribe</a> | <a href="../terms">Terms of Use</a> | <a href="../sitemap">Sitemap</a>
+  <p class="body">&copy; Copyright International ASET Inc., 2016. All rights reserved.</p>
   <p class="copyright1">Have any feedback? Please provide them here: <script>var refURL = window.location.protocol + "//" + window.location.host + window.location.pathname; document.write('<a href="http://international-aset.com/feedback/?refURL=' + refURL+'" class="body-link">Feedback</a>');</script></p>
 </div>
 </div>
