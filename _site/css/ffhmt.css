@@ -1757,10 +1757,20 @@ footer {
 /* 768 PX */
 @media only screen and (min-width: 48em) {
 .topics li {
-  padding-bottom: 0;
-  float: left;
-  width: 50%;
-  padding-right: 1em;
+    padding-bottom: 0;
+    list-style-type: disc;
+    list-style-position: inside;
+    padding: 0px 0 0px 25px;
+    text-indent: -2em;
+}
+
+.topics {
+    -moz-column-count: 2;
+    -moz-column-gap: 20px;
+    -webkit-column-count: 2;
+    -webkit-column-gap: 20px;
+    column-count: 2;
+    column-gap: 20px;
 }
 
 .ls-wrapper {
