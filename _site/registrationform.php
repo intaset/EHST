@@ -59,11 +59,11 @@ $message = $message . PHP_EOL.PHP_EOL."-- ".PHP_EOL."";
 
 $message = stripslashes($message);
 
-$subject = "Registration Details for " . $_REQUEST['Email'];
+$subject = "Registration Details for " . $_REQUEST['email'];
 
-$headers = "From: " . $_REQUEST['Email'];
+$headers = "From: " . $_REQUEST['email'];
 
-$your_email = $_REQUEST['Email'];
+$your_email = $_REQUEST['email'];
 
 $your_subject = "Your Registration Details for EHST'17";
 
@@ -77,9 +77,7 @@ if ((($_FILES["file"]["type"] == "image/gif")
 
 || ($_FILES["file"]["type"] == "image/jpg")
 
-|| ($_FILES["file"]["type"] == "image/tif")
-
-|| ($_FILES["file"]["type"] == "application/pdf"))
+|| ($_FILES["file"]["type"] == "image/tif"))
 
 && ($_FILES["file"]["size"] < 20000000))
 
