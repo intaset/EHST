@@ -41,7 +41,7 @@ $message = build_message($_REQUEST);
 
 $message = 'Dear Colleague,
 
-Thank you for registering for EHST 2017. If you have requested any official letters, please allow up to 5 business days to receive your documents.
+Thank you for registering for EHST 2018. If you have requested any official letters, please allow up to 5 business days to receive your documents.
 
 If you are an author, please make sure to send us your camera ready version and a signed copyright form via email to info@ehstconference.com. You can find the copyright form here: www.ehstconference.com/papers. Please note that failing to do so may result in an unsuccessful process of your registration.
 
@@ -65,9 +65,9 @@ $headers = "From: " . $_REQUEST['email'];
 
 $your_email = $_REQUEST['email'];
 
-$your_subject = "Your Registration Details for EHST'17";
+$your_subject = "Your Registration Details for EHST'18";
 
-$your_headers = "From: EHST'17 <" . $my_email . ">";
+$your_headers = "From: EHST'18 <" . $my_email . ">";
 
 if ((($_FILES["file"]["type"] == "image/gif")
 
@@ -113,7 +113,7 @@ mail($your_email,$your_subject,$message,$your_headers);
 <meta name="robots" content="noarchive">
 <meta name="description" content="">
 <meta name="keywords" content="solar thermal energy, solar cell theory and applications, biomass, biofuel, bioenergy, smart buildings, smart lightings, wind energy, geothermal energy, wave energies, tide energies, nuclear energies, prospects, issues, battery energy storage, energy storage, hydroenergy, energy financing, energy companies challenges, energy distribution, energy conversion, electric vehicles, fossil fuels, energy change, climate change, energy pollution, environmental pollution, energy, nanotechnology, low carbon technologies, energy infrastructures, marketing, economy, societal aspects, global energy policy, energy and transportation, sustainable energy, energy efficiency-achievements and challenges, energy management, fuel cells, Battery Energy Storage, Biomass, Biofuel, and Bioenergy, Energy and Climate Change, Energy and Environmental Pollution, Energy and Nanotechnology, Energy and Societal Aspects, Energy and Transportation, Energy Companies Challenges, Energy Conversion, Energy Distribution, Energy Efficiency-Achievements and Challenges, Energy Financing, Energy Infrastructures, Marketing and Economy, Energy Management, Energy Storage, Electric Vehicles, Fossil Fuels, Fuel Cells, Geothermal Energy, Global Energy Policy, Hydroenergy, Low Carbon Technologies, Nuclear Energies, Prospects and Issues, Smart Buildings, Smart Lightings, Solar Cell Theory and Applications, Solar Thermal Energy, Sustainable Energy, Wave and Tide Energies, biomass, biofuel, bioenergy, solar cell, nuclear energy, energy efficiency, climate change, global warming, fossil fuels, tidal energy, ocean energy, wave energy, energy management, energy harvesting, numerical simulation, heat transfer, heat source, microchannel, industrial heat transfer, experimental heat transfer, numerical heat transfer, renewable energy, non-renewable energy, two phase flow and heat transfer, multiphase flow and heat transfer, combustion, boiler, heater, furnace, conservation equations, natural convection, force convection, conduction, radiation, convection, free convection, non Newtonian heat transfer, non Newtonian fluid flow and heat transfer, heat pipe, bioenergy, wind turbine, heat recovery, thermal elecric, high temperature heat transfer, energy storage, transport phenomena, turbomachinary, MDS, thermodynamics, thermophysical properties, DNS, direct numerical simulation, clean energy, green energy, battery, energy storage, water energy, offshore wind, onshore wind, advanced building, smart grid technologies, smart cities, electric vehicle, energy distribution, Innovative energy technologies, utilities, oil and gas, alternative energy, fossil fuels, heat, light, power, power plant, steam turbine, gas turbine, electrical grid, smart grid, natural gas, natural gas transport, LIQUEFIED NATURAL GAS, CNG, LNG, natural gas storage, fission, fussion, solar PV, PV, refinery, heavy oil, refining, light oil, COAL LIQUEFACTION, waste to energy, Pyrolysis, energy harvesting, Photovoltaic, petroleum, energy harvesting conference, Biomass/Biofuel energy,materials and technologies, Hydro energy, materials and technologies, Wind energy resources and technologies, Solar cells energy, materials and technologies, Fuel cells materials and hydrogen energy, Battery materials and technologies, Energy storage techniques, Energy conversion modules, Nanotechnology and energy, Green buildings, Energy process and system simulation, modelling and optimization, Advanced power generation, transmission and automation, Distributed energy systems, Energy efficiency improvement, Thermodynamic and energy optimization, Energy education, Energy, Environment and Sustainable Development, Economic aspects of energy, Clean Energy Market and Finance, Energy policies, Renewable energy resources, Sustainable energy production, Environmental risk management, Green buildings, Energy storage, Energy management, Biomass and biofuels, Waste to energy, Processing of oil and gas, CO2 capturing and management, Pipelines, Energy efficiency, Smart grids, Energy, Energy and transport, Case studies, Energy Demand and Economic Growth, Energy Research and Development, Non-fossil Fuel Energy: Renewables and Nuclear, Energy Efficiency and Storage, Financial Markets and Energy Markets, Political Economy, OPEC’s Role in a Changing Energy World, Energy Supply and Economic Growth, Energy and the Environment, International Energy Markets, Energy Research and Development, Public Understanding of and Attitudes towards Energ, Petroleum Economics, Geopolitics of Energy, Energy Markets and Regulation, Challenges in Gas Supply and Transportation, Regional Energy Markets, Energy Policy for Sustainable Development, Energy Supply, Demand and Economic Growth, Regional Electricity Trade, Energy Efficiency and Storage, Regional Strategies for Alternative and Renewable Energy, Oil and Gas investments in a low price scenario;, Regional Impact of the Unconventional Oil and Gas Revolution;, Renewable energy diffusion: Policies and implications;, The geopolitics of oil and natural gas;, The utilities of the future;, Energy supply security;, Energy and development: poverty and sustainability;, Energy technology and innovation policy in Latam, Energy efficiency policy in Latam, Energy Integration, Energy Transition, Energy and Climate Change, Transportation and Mobility, Energy Modelling, Future of Nuclear Power, Energy and Macroeconomics, Fiscal Impacts of the energy sector, Energy Subsidies, Power Systems, Power Electronics, Machines, Electromechanics, and Drives, Renewable Energy Technologies, Energy Markets and Demand Response">
-<title>EHST'17 - Registration Form Filled!</title>
+<title>EHST'18 - Registration Form Filled!</title>
 
 <meta name="handheldfriendly" content="true">
 <meta name="mobileoptimized" content="240">
@@ -142,7 +142,7 @@ mail($your_email,$your_subject,$message,$your_headers);
 
 <body>
 <nav id="slide-menu">
-  <h1>EHST'17</h1>
+  <h1>EHST'18</h1>
   <ul>
     <li><a href="/">Home</a></li>
     <li><a href="../papers">Paper Submissions</a></li>
@@ -184,8 +184,8 @@ mail($your_email,$your_subject,$message,$your_headers);
   </div>
 </div>
         <div class="bg">
-          <h1>International Conference on Energy<br>Harvesting, Storage, and Transfer (EHST'17)</h1>
-          <p class="subhead">August 21 - 23, 2017 | Toronto, Canada</p>
+          <h1>2<sup>nd</sup> International Conference on Energy<br>Harvesting, Storage, and Transfer (EHST'18)</h1>
+          <p class="subhead">June 12 - 14, 2018 | Toronto, Canada</p>
 
           <a href="../papers" class="bg-link">Paper Submission</a> <p class="dot">&middot;</p> <a href="../dates" class="bg-link">Important Dates</a> <p class="dot">&middot;</p> <a href="../registration" class="bg-link">Registration</a>
 
@@ -199,7 +199,7 @@ mail($your_email,$your_subject,$message,$your_headers);
   </div>
 </div>
 </div><br>
-      <p class="body" style="text-align: center!important;">For more information about the EHST'17 Conference, please view the <b><a href="http://ffhmt.com/FFHMT17_EHST17_CFP.pdf" class="body-link">conference flyer</a></b>.</p>
+      <!-- <p class="body" style="text-align: center!important;">For more information about the EHST'18 Conference, please view the <b><a href="http://ffhmt.com/FFHMT17_EHST17_CFP.pdf" class="body-link">conference flyer</a></b>.</p> -->
 
         </div>
     </div>
@@ -212,8 +212,8 @@ mail($your_email,$your_subject,$message,$your_headers);
         </div>
 
         <div class="bg">
-          <h1>International Conference on Energy<br>Harvesting, Storage, and Transfer (EHST'17)</h1>
-          <p class="subhead">August 21 - 23, 2017 | Toronto, Canada</p>
+          <h1>2<sup>nd</sup> International Conference on Energy<br>Harvesting, Storage, and Transfer (EHST'18)</h1>
+          <p class="subhead">June 12 - 14, 2018 | Toronto, Canada</p>
 
           <a href="../papers" class="bg-link">Paper Submission</a> <p class="dot">&middot;</p> <a href="../dates" class="bg-link">Important Dates</a> <p class="dot">&middot;</p> <a href="../registration" class="bg-link">Registration</a>
 
@@ -228,7 +228,7 @@ mail($your_email,$your_subject,$message,$your_headers);
 </div>
 </div><br>
 
-      <p class="body" style="text-align: center!important; color: #FFF!important;">For more information about the EHST'17 Conference, please view the <b><a href="http://ffhmt.com/FFHMT17_EHST17_CFP.pdf" class="body-link">conference flyer</a></b>.</p>
+     <!--  <p class="body" style="text-align: center!important; color: #FFF!important;">For more information about the EHST'18 Conference, please view the <b><a href="http://ffhmt.com/FFHMT17_EHST17_CFP.pdf" class="body-link">conference flyer</a></b>.</p> -->
 
         </div>
         </div> 
@@ -243,21 +243,21 @@ mail($your_email,$your_subject,$message,$your_headers);
       <div id="main-slider" class="liquid-slider">
     <div>
       <h2 class="title">1</h2>
-      <p class="bold">EHST 2017:</p>
-      <p class="body">EHST 2017 will  be held in Toronto, Canada on August 21 - 23, 2017.</p>
+      <p class="body"><p class="bold">EHST 2018:</p>
+      <p class="body">EHST 2018 will  be held in Toronto, Canada on June 12 - 14, 2018.</p></p>
 
-      <p class="bold">CDSR'17 Workshop</p>
-      <p class="body">As per popular request, the organizing committee has decided to extend the CDSR'17 congress to three days (now August 21 - 23, 2017). The new high-level schedule is as follows:</p>
+      <!-- <p class="bold">EHST'18 Workshop</p>
+      <p class="body">As per popular request, the organizing committee has decided to extend the EHST'18 conference to three days (now June 12 - 14, 2018). The new high-level schedule is as follows:</p>
 
       <ul>
         <li>Day 1: Workshop(s) and Registration</li>
         <li>Day 2: Main Track Conference Sessions</li>
-        <li>Day 2: Main Track Conference Sessions and Gala dinner or Cruise tour</li>
+        <li>Day 3: Main Track Conference Sessions and Gala dinner or Cruise tour</li>
       </ul>
       
       <p class="body">Registration for the workshop will be 113 CAD (HST included) and separate from the main conferences. Workshop attendees will receive a certificate of participation. For registration, please visit: <a href="../registration" class="body-link">here</a>.</p>
 
-      <p class="body">More information to follow; we greatly appreciate your patience!</p>
+      <p class="body">More information to follow; we greatly appreciate your patience!</p> -->
     </div>          
     <div>
       <h2 class="title">2</h2>
@@ -284,7 +284,7 @@ mail($your_email,$your_subject,$message,$your_headers);
 
     <p class="body">If there are any problems in the information you have filled out, please write an email to us at <a href="mailto:registration@ehstconference.com" class="body-link">registration@ehstconference.com</a> mentioning the mistakes made. Please note that you SHOULD NOT refill the form.</p>
 
-  <p class="body">We are looking forward to seeing you at EHST'17!</p>
+  <p class="body">We are looking forward to seeing you at EHST'18!</p>
   </div>
 </div>
 
@@ -304,11 +304,11 @@ mail($your_email,$your_subject,$message,$your_headers);
 
 <h2>Upcoming Dates</h2>
 
-<div class="grid events">
+<!-- <div class="grid events">
 <div class="unit unit-s-1 unit-m-1-4 unit-l-1-4">
   <div class="date">
-    <div class="past">May. 26, 2017</div>
-    Jul. 14, 2017
+    <div class="past">May. 26, 2018</div>
+    Jul. 14, 2018
   </div>
 </div>
 
@@ -323,8 +323,8 @@ mail($your_email,$your_subject,$message,$your_headers);
 <div class="grid events">
 <div class="unit unit-s-1 unit-m-1-4 unit-l-1-4">
   <div class="date">
-    <div class="past">Jun. 23, 2017</div>
-    Jul. 14, 2017
+    <div class="past">Jun. 23, 2018</div>
+    Jul. 14, 2018
   </div>
 </div>
 
@@ -334,13 +334,13 @@ mail($your_email,$your_subject,$message,$your_headers);
      Final Registration Deadline for Authors
   </div>
 </div>
-</div>
+</div> -->
 
 <div class="grid events">
 <div class="unit unit-s-1 unit-m-1-4 unit-l-1-4">
   <div class="date">
-    <!-- <div class="past">May 15, 2017</div> -->
-    Aug. 21 - 23, 2017
+    <!-- <div class="past">May 15, 2018</div> -->
+    Jun. 14 - 16, 2018
   </div>
 </div>
 
@@ -372,55 +372,24 @@ mail($your_email,$your_subject,$message,$your_headers);
 
   <div class="unit unit-s-1 unit-m-2-3 unit-l-2-3 contact">
   <div class="unit-spacer">
-  <p class="body">For questions or comments regarding EHST'17, please fill out the form below:</p>
+  <p class="body">For questions or comments regarding EHST'18, please fill out the form below:</p>
 
-    <form action="../contactus.php" method="post" enctype="multipart/form-data" name="ContactForm">
-  
-  <table border="0" class="contact">
-    <tbody>
-      <tr>
-        <td class="label">Name:</td>
-        <td class="text"><span id="sprytextfield1">
-              <input name="Name" type="text" id="Name" size="40" autocomplete="off">
+  <form action="../contactus.php" method="post" enctype="multipart/form-data" name="ContactForm" class="cf">
+  <div class="half left cf">
+    <input style="margin-bottom:0.85em" type="text" name="Name" id="Name" placeholder="Name" required>
+    <input style="margin-bottom:0.85em" type="email" name="Email" id="Email" placeholder="Email address" required>
+    <input type="text" name="Subject" id="Subject" placeholder="Subject" required>
+  </div>
+  <div class="half right cf">
+    <textarea name="Message" type="text" rows="5" name="Message" id="Message" placeholder="Message" required></textarea>
+  </div><br><br>
+  <center class="full right cf"><div class="g-recaptcha" data-sitekey="6LdNFyMTAAAAALmwB-BoYkJshhMcclJ0ESSBdc5Q"></div></center>
+  <div class="cf">
+  <center><div class="full right cf"><input type="submit" name="Submit" value="Submit">
+    <input type="reset" name="Reset" value="Reset"></center></div>
+</div></div></form>
 
-              <span class="textfieldRequiredMsg">A value is required.</span></span></td>
-        </tr>
 
-        <tr>
-            <td class="label">Email:</td>
-            <td class="text"><span id="sprytextfield2">
-            <input name="Email" type="text" id="Email" size="40" autocomplete="off">
-            <span class="textfieldRequiredMsg">A value is required.</span><span class="textfieldInvalidFormatMsg">Invalid format.</span></span></td>
-          </tr>
-
-          <tr>
-            <td class="label">Confirm Email:</td>
-             <td class="text"><span id="spryconfirm4">
-              <input name="Confirm Email" type="text" id="Confirm Email" size="40" autocomplete="off">
-              <span class="confirmRequiredMsg">A value is required.</span><span class="confirmInvalidMsg">Emails don't match.</span></span></td>
-          </tr>
-
-          <tr>
-            <td class="label">Subject:</td>
-            <td class="text"><span id="sprytextfield3">
-              <input name="Subject" type="text" id="Subject" size="40" autocomplete="off">
-              <span class="textfieldRequiredMsg">A value is required.</span></span></td>
-          </tr>
-
-          <tr>
-            <td valign="top" class="label">Message:</td>
-            <td class="text"><span id="sprytextarea1">
-              <textarea name="Message" id="Message" cols="31" rows="10" autocomplete="off"></textarea>
-              <span class="textareaRequiredMsg">A value is required.</span></span>
-              <center>
-        <input type="submit" name="Submit" value="Submit" accept="image/jpeg">
-        <input type="reset" name="Reset" value="Reset"></center></td>
-          </tr>
-
-        </tbody></table><br>
-
-        
-</form>
     </div>
   </div>
   </div>
@@ -428,7 +397,7 @@ mail($your_email,$your_subject,$message,$your_headers);
 
 <div class="copyright">
   <a href="http://international-aset.com">International ASET Inc.</a> | <a href="http://international-aset.com/phplistpublic/?p=subscribe&id=1">Subscribe</a> | <a href="../terms">Terms of Use</a> | <a href="../sitemap">Sitemap</a>
-  <p class="body">&copy; Copyright International ASET Inc., 2016. All rights reserved.</p>
+  <p class="body">© Copyright <script>document.write(new Date().getFullYear())</script>, International ASET Inc. – All Rights Reserved.</p>
   <p class="copyright1">Have any feedback? Please provide them here: <script>var refURL = window.location.protocol + "//" + window.location.host + window.location.pathname; document.write('<a href="http://international-aset.com/feedback/?refURL=' + refURL+'" class="body-link">Feedback</a>');</script></p>
 </div>
 </div>
