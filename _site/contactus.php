@@ -215,18 +215,18 @@ mail($my_email,$subject,$message,$headers);
   
 <h2>Upcoming Dates</h2>
 
-<!-- <div class="grid events">
+<div class="grid events">
 <div class="unit unit-s-1 unit-m-1-4 unit-l-1-4">
   <div class="date">
-    <div class="past">May. 26, 2018</div>
-    Jul. 14, 2018
+    <!-- <div class="past">May. 26, 2018</div> -->
+    Dec. 1, 2017
   </div>
 </div>
 
 <div class="unit unit-s-1 unit-m-3-4 unit-l-3-4">
   <div class="unit-spacer">
-    <div class="past past-text">Final Version of Accepted Submissions Deadline</div>
-    Final Version of Accepted Submissions Deadline
+    <!-- <div class="past past-text">Final Version of Accepted Submissions Deadline</div> -->
+    Paper Submission Deadline
   </div>
 </div>
 </div>
@@ -234,31 +234,31 @@ mail($my_email,$subject,$message,$headers);
 <div class="grid events">
 <div class="unit unit-s-1 unit-m-1-4 unit-l-1-4">
   <div class="date">
-    <div class="past">Jun. 23, 2018</div>
-    Jul. 14, 2018
+    <!-- <div class="past">Jun. 23, 2018</div> -->
+    Dec. 22, 2017
   </div>
 </div>
 
 <div class="unit unit-s-1 unit-m-3-4 unit-l-3-4">
   <div class="unit-spacer">
-     <div class="past past-text">Registration Deadline for Authors</div>
-     Final Registration Deadline for Authors
+     <!-- <div class="past past-text">Registration Deadline for Authors</div> -->
+     Notification to Authors
   </div>
 </div>
-</div> -->
+</div>
 
 <div class="grid events">
 <div class="unit unit-s-1 unit-m-1-4 unit-l-1-4">
   <div class="date">
     <!-- <div class="past">May 15, 2018</div> -->
-    Jun. 14 - 16, 2018
+    Jan. 29, 2018
   </div>
 </div>
 
 <div class="unit unit-s-1 unit-m-3-4 unit-l-3-4">
   <div class="unit-spacer">
     <!-- <div class="past past-text">Extended Notification of Authors</div> -->
-    Conference Dates
+    Early-Bird Registration
   </div>
 </div>
 </div>
