@@ -118,7 +118,7 @@ mail($my_email,$subject,$message,$headers);
   </div>
 </div>
 </div><br>
-     <!--  <p class="body" style="text-align: center!important;">For more information about the EHST'18 Conference, please view the <b><a href="http://ffhmt.com/FFHMT17_EHST17_CFP.pdf" class="body-link">conference flyer</a></b>.</p> -->
+      <p class="body" style="text-align: center!important;">For more information about the EHST'18 Conference, please view the <b><a href="http://ffhmt.com/FFHMT18_EHST18_CFP.pdf" class="body-link">conference flyer</a></b>.</p>
 
         </div>
     </div>
@@ -147,7 +147,7 @@ mail($my_email,$subject,$message,$headers);
 </div>
 </div><br>
 
-     <!--  <p class="body" style="text-align: center!important; color: #FFF!important;">For more information about the EHST'18 Conference, please view the <b><a href="http://ffhmt.com/FFHMT17_EHST17_CFP.pdf" class="body-link">conference flyer</a></b>.</p> -->
+      <p class="body" style="text-align: center!important; color: #FFF!important;">For more information about the EHST'18 Conference, please view the <b><a href="http://ffhmt.com/FFHMT18_EHST18_CFP.pdf" class="body-link">conference flyer</a></b>.</p>
 
         </div>
         </div> 
