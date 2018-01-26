@@ -26,7 +26,7 @@
  /* We just have one-lined elements, so we'll center the elements with the line-height set to the height of the header */
 .cbp-af-header h1,
 .cbp-af-header nav a {
-	line-height: 130px;
+	line-height: 114px;
 }
 
 .cbp-af-header h1 {
@@ -43,14 +43,15 @@
 }
 
 .cbp-af-header nav a {
-	color: #BBDA8C;
-	font-weight: 200;
+	color: #3AACE2;/*
+	font-weight: 200;*/
 	font-size: 1em;
 	text-decoration: none;
+	font-weight: 700;
 }
 
 .cbp-af-header nav a:hover {
-	color: #2D95D2;
+	color: #2A786A;
 }
 
 /* Transitions and class for reduced height */
