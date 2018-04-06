@@ -185,7 +185,7 @@ mail($your_email,$your_subject,$message,$your_headers);
 </div>
         <div class="bg">
           <h1>3<sup>rd</sup> International Conference on Energy<br>Harvesting, Storage, and Transfer (EHST'19)</h1>
-          <p class="subhead">June 6 - 8, 2019 | Ottawa, Canada</p>
+          <p class="subhead">June 5 - 7, 2019 | Ottawa, Canada</p>
 
           <a href="../papers" class="bg-link">Submissions</a> <p class="dot">&middot;</p> <a href="../dates" class="bg-link">Important Dates</a> <p class="dot">&middot;</p> <a href="../registration" class="bg-link">Registration</a>
 
@@ -212,7 +212,7 @@ mail($your_email,$your_subject,$message,$your_headers);
 
         <div class="bg">
           <h1>3<sup>rd</sup> International Conference on Energy<br>Harvesting, Storage, and Transfer (EHST'19)</h1>
-          <p class="subhead">June 6 - 8, 2019 | Ottawa, Canada</p>
+          <p class="subhead">June 5 - 7, 2019 | Ottawa, Canada</p>
 
           <a href="../papers" class="bg-link">Submissions</a> <p class="dot">&middot;</p> <a href="../dates" class="bg-link">Important Dates</a> <p class="dot">&middot;</p> <a href="../registration" class="bg-link">Registration</a>
 
